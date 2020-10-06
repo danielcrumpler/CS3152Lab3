@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /**
- * The Class PasswordHashData
+ * The Class WorstPasswordsHashData
  * 
- * @author CS3152
+ * @author Daniel Crumpler
  * @version Fall 2020
  */
 public class WorstPasswordsHashData {
@@ -15,13 +15,11 @@ public class WorstPasswordsHashData {
 	private String[] passwordHash;
 
 	/**
-	 * Instantiates a PasswordHashData object. The usernames and password hashes are
+	 * Instantiates a WorstPasswordsHashData object. The passwords are
 	 * loaded from the specified file.
 	 * 
 	 * @pre filename != null and !filename.isEmpty()
-	 * @post size() = number of usernames with given password hashes and getUser(i)
-	 *       is the ith username and getHash(i) is the password hash of the ith
-	 *       username for i = 0, 1, 2, ..., size() - 1
+	 * @post size() = number of passwords
 	 * @param filename the name of the file from which the data is loaded
 	 */
 	public WorstPasswordsHashData(String filename) {
@@ -37,12 +35,12 @@ public class WorstPasswordsHashData {
 
 
 	/**
-	 * Gets the password hash of the password with the specified index
+	 * Gets the password of the passwords with the specified index
 	 * 
 	 * @pre index >= 0 and index < size()
 	 * @post none
 	 * @param index - index of the password
-	 * @return the username of the ith user
+	 * @return the password of index
 	 * @throws ArrayIndexOutOfBoundsException if passed in index is less than 0 or
 	 *                                        greater than or equal to size()
 	 */

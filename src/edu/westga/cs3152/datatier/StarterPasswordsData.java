@@ -11,6 +11,12 @@ import java.util.ArrayList;
 public class StarterPasswordsData {
 	private ArrayList<String> passwords;
 
+	/**
+	 * Instantiates a StarterPasswordsData object.
+	 * 
+	 * @pre none
+	 * @post none
+	 */
 	public StarterPasswordsData() {
 		this.passwords = new ArrayList<String>();
 		for (int uppercaseLetter = 0; uppercaseLetter < 26; uppercaseLetter++) {
@@ -31,6 +37,13 @@ public class StarterPasswordsData {
 		}
 	}
 	
+	/**
+	 * Gets the ArrayList of the generated passwords
+	 * 
+	 * @pre none
+	 * @post none
+	 * @return passwords of type ArrayList<String>
+	 */
 	public ArrayList<String> getPasswords() {
 		return this.passwords;
 	}

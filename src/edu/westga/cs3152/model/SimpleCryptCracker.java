@@ -7,9 +7,15 @@ import edu.westga.cs3152.datatier.StarterPasswordsData;
 import edu.westga.cs3152.datatier.WorstPasswordsHashData;
 import edu.westga.cs3152.hashing.SimpleCrypt;
 
+/**
+ * The Class SimpleCryptCracker
+ * 
+ * @author Daniel Crumpler
+ * @version Fall 2020
+ */
 public class SimpleCryptCracker {
 	/**
-	 * A demo of password checking using MD5 without salt
+	 * My implementation of password checking using MD5 without salt
 	 * 
 	 * @param args - not used
 	 */
@@ -34,75 +40,90 @@ public class SimpleCryptCracker {
 					break;
 				}
 				if (crypt.checkPassword(passwordGuess.replace("e", "3"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("e", "3"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3") + ".");
 					found = true;
 					break;
 				}
 				if (crypt.checkPassword(passwordGuess.replace("i", "1"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("i", "1") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("i", "1"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("i", "1") + ".");
 					found = true;
 					break;
 				}
 				if (crypt.checkPassword(passwordGuess.replace("o", "0"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("o", "0") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("o", "0"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("o", "0") + ".");
 					found = true;
 					break;
 				}
 				if (crypt.checkPassword(passwordGuess.replace("s", "5"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("s", "5") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("s", "5"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("s", "5") + ".");
 					found = true;
 					break;
 				}
-				
+
 				if (crypt.checkPassword(passwordGuess.replace("e", "3").replace("i", "1"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("i", "1") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("e", "3").replace("i", "1"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("i", "1") + ".");
 					found = true;
 					break;
 				}
-				
+
 				if (crypt.checkPassword(passwordGuess.replace("e", "3").replace("o", "0"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("o", "0") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("e", "3").replace("o", "0"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("o", "0") + ".");
 					found = true;
 					break;
 				}
-				
+
 				if (crypt.checkPassword(passwordGuess.replace("e", "3").replace("s", "5"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("s", "5") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("e", "3").replace("s", "5"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("s", "5") + ".");
 					found = true;
 					break;
 				}
-				
+
 				if (crypt.checkPassword(passwordGuess.replace("i", "1").replace("o", "0"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("s", "5") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("i", "1").replace("o", "0"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("s", "5") + ".");
 					found = true;
 					break;
 				}
-				
+
 				if (crypt.checkPassword(passwordGuess.replace("i", "1").replace("s", "5"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("s", "5") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("i", "1").replace("s", "5"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("s", "5") + ".");
 					found = true;
 					break;
 				}
-				
+
 				if (crypt.checkPassword(passwordGuess.replace("o", "0").replace("s", "5"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("s", "5") + ".");
+					output.put(pwData.getUsername(idx), passwordGuess.replace("o", "0").replace("s", "5"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("s", "5") + ".");
 					found = true;
 					break;
 				}
-				
-				if (crypt.checkPassword(passwordGuess.replace("e", "3").replace("i", "1").replace("o", "0").replace("s", "5"), passwordHash)) {
-					output.put(pwData.getUsername(idx), passwordGuess);
-					System.out.println("The password for " + pwData.getUsername(idx) + " is " + passwordGuess.replace("e", "3").replace("i", "1").replace("o", "0").replace("s", "5") + ".");
+
+				if (crypt.checkPassword(
+						passwordGuess.replace("e", "3").replace("i", "1").replace("o", "0").replace("s", "5"),
+						passwordHash)) {
+					output.put(pwData.getUsername(idx),
+							passwordGuess.replace("e", "3").replace("i", "1").replace("o", "0").replace("s", "5"));
+					System.out.println("The password for " + pwData.getUsername(idx) + " is "
+							+ passwordGuess.replace("e", "3").replace("i", "1").replace("o", "0").replace("s", "5")
+							+ ".");
 					found = true;
 					break;
 				}
@@ -120,12 +141,12 @@ public class SimpleCryptCracker {
 					break;
 				}
 			}
-			
+
 			if (!found) {
 				System.out.println("The password for " + pwData.getUsername(idx) + " was not found.");
 			}
 		}
-		
+
 		System.out.println();
 		System.out.println(output.size() + " passwords have been cracked.");
 	}
