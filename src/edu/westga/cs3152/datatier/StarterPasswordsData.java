@@ -25,9 +25,10 @@ public class StarterPasswordsData {
 					for (int number2 = 0; number2 < 10; number2++) {
 						for (int number3 = 0; number3 < 10; number3++) {
 							for (int number4 = 0; number4 < 10; number4++) {
-								String[] upperCase = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
-								String[] lowerCase = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
-								String currPassword = upperCase[uppercaseLetter] + lowerCase[lowercaseLetter] + number1 + number2 + number3 + number4;
+								String[] upperCase = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+								String[] lowerCase = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+								String currPassword = upperCase[uppercaseLetter] + lowerCase[lowercaseLetter] + number1
+										+ number2 + number3 + number4;
 								this.passwords.add(currPassword);
 							}
 						}
@@ -36,7 +37,7 @@ public class StarterPasswordsData {
 			}
 		}
 	}
-	
+
 	/**
 	 * Gets the ArrayList of the generated passwords
 	 * 
