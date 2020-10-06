@@ -106,7 +106,6 @@ public class SimpleCryptCracker {
 					found = true;
 					break;
 				}
-				
 			}
 
 			if (found) {
